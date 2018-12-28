@@ -1,8 +1,10 @@
 #include <iostream>
 #include "Player.h"
+#include "Object.h"
 
 int main() {
-	Player p1("Walton", 5,1,1,1,1);
+	Location x (1, 1);
+	Player p1("Walton", x, 1,1,1);
 	p1.print();
 	return 1;
 }
