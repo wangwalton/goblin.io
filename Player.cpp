@@ -31,6 +31,13 @@ void Player::setAtt(int att) {
 void Player::setDef(int def) {
     this->def = def;
 }
+char Player::move(Location loc, Map *m) {
+	if (!m->check_valid_location(loc)) return 0;
+	m->move_object(this, loc);
+	this->set_loc(loc);
+	return 1;
+}
+
 void Player::print() {
 	Location loca = this->get_loc();
 

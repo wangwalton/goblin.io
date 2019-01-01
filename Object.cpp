@@ -22,10 +22,6 @@ char Object::get_type() {
 	return this->type;
 }
 
-Object* Object::get_next_ob() {
-	return this->next;
-}
-
 void Object::set_name(std::string const & name) {
 	this->name = name;
 }
@@ -38,15 +34,12 @@ void Object::set_type(char type) {
 	this->type = type;
 }
 
-void Object::set_next_ob(Object* ob) {
-	this->next = ob;
-}
-
 void Object::print() {
 	std::cout << "Object Name: " << this->name << std::endl <<
 				 "Type:		   " << this->type << std::endl <<
 				 "Location:    (" << std::get<0>(this->loc) << ", " <<
-				 					 std::get<1>(this->loc) << ")" << std::endl <<
+				 					 std::get<1>(this->loc) << ")" << 
+									 std::endl <<
 				 "Next Object: " << next << std::endl;
 }
 

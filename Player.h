@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "Object.h"
+#include "Map.h"
 
 class Player : public Object {
 	private:
@@ -24,6 +25,9 @@ class Player : public Object {
 		void setAtt(int att);
 		void setDef(int def);
 		
+		// Return 0 for unsuccessful, 1 for successful
+		char move(Location loc, Map* m);
+
 		// Helper Functions
 		void print();
 };
