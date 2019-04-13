@@ -1,4 +1,4 @@
-#include "Player.h"
+#include "include/Player.h"
 
 Player::Player(std::string const &s, Location loc,
 			   int rad, int hp, int att, int def) : Object(s,

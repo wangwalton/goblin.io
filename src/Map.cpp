@@ -1,4 +1,4 @@
-#include "Map.h"
+#include "include/Map.h"
 
 bool is_tile_within_radius(Location t, Location c, int rad) {
 	int d_x = std::get<0>(t) - std::get<0>(c);

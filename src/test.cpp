@@ -1,8 +1,8 @@
 #include <iostream>
-#include "Grid.h"
-#include "Player.h"
-#include "Object.h"
-#include "Map.h"
+#include "include/Grid.h"
+#include "include/Player.h"
+#include "include/Object.h"
+#include "include/Map.h"
 #include <chrono>
 #include <thread>
 

@@ -1,4 +1,4 @@
-#include "Grid.h"
+#include "include/Grid.h"
 
 Grid::Grid() {
 	this->type = 0;

@@ -1,4 +1,4 @@
-#include "Object.h"
+#include "include/Object.h"
 
 Object::Object(std::string const & name, Location loc, char type,
 				Object* next) {

@@ -1,7 +1,7 @@
 #ifndef _map_h
 #define _map_h
 
-#include "Grid.h"
+#include "include/Grid.h"
 #include "Player.h"
 #include <iostream>
 #include <cmath>
